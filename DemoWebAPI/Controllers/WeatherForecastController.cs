@@ -33,7 +33,7 @@ namespace DemoWebAPI.Controllers
         [HttpGet("get-message")]
         public string GetMessage(string name)
         {
-            return $"Hello {name}, Greetings for the day!";
+            return $"Hello {name}, Greetings for the day! Current Date Time is : {DateTime.Now}";
         }
     }
 }

@@ -29,5 +29,11 @@ namespace DemoWebAPI.Controllers
             })
             .ToArray();
         }
+
+        [HttpGet("get-message")]
+        public string GetMessage(string name)
+        {
+            return $"Hello {name}, Greetings for the day!";
+        }
     }
 }
